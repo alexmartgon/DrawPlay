@@ -9,15 +9,15 @@ public class Cat {
 	// eyes will be about 1/4 from top of head and 1/4 from left
 	private static final int EYE_Y = HEAD_DIMENSION/4;
 	private static final int EYE_X = HEAD_DIMENSION/4;
-	private static final int EYE_SEPARATION = HEAD_DIMENSION/3;
+	private static final int EYE_SEPARATION = HEAD_DIMENSION/10;
 	// pick eye dimensions
 	private static final int EYE_HEIGHT = 50;
 	private static final int EYE_WIDTH = 25;
 	// pick mouth height, width is based on head dimension
 	private static final int MOUTH_HEIGHT = 25;
-	private static final int MOUTH_WIDTH = HEAD_DIMENSION/4;
+	private static final int MOUTH_WIDTH = HEAD_DIMENSION/8;
 	// mouth starts about 40% from left edge of head
-	private static final int MOUTH_X = HEAD_DIMENSION/5 * 2;
+	private static final int MOUTH_X = HEAD_DIMENSION/5;
 	private static final int MOUTH_Y = HEAD_DIMENSION/5 * 3;
 
 	// draw will render the Cat on the Graphics object
@@ -27,7 +27,7 @@ public class Cat {
 		int x=catX;
 		int y=catY;
 		// Draw the head
-		g2.setColor(Color.black);
+		g2.setColor(Color.white);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
 		g2.setColor(Color.red);
